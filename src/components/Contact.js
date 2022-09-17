@@ -6,7 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 // import contact data
 import { contact } from '../data';
-// import { ContactMap } from './ContactMap';
+import { ContactMap } from './ContactMap';
 
 let schema = yup.object().shape({
   from_name: yup.string().required().min(1),
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
         <div className='flex flex-col-reverse lg:gap-x-8 lg:flex-row'>
           <div className='w-full h-96 rounded-lg relative'>
-            {/* <ContactMap /> */}
+            <ContactMap />
           </div>
           <div className='flex flex-1 flex-col items-start space-y-8 mb-12 mt-12 lg:mb-0 lg:pt-2 lg:text-left '>
             {contact.map((item, index) => {
