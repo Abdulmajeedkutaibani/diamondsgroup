@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='lg:h-screen flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat pt-32 pb-20 lg:py-0 overflow-hidden'
+      className='lg:h-screen max-h-[1200px] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat pt-32 pb-20 lg:py-0 overflow-hidden'
     >
       <div className='container mx-auto h-full'>
         <div className='flex items-center h-full pt-8'>

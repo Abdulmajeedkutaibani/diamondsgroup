@@ -4,9 +4,12 @@ import React from 'react';
 import { social } from '../data';
 
 // import logo
-import Logo from '../assets/img/logo 2.svg';
+import Logo from '../assets/img/logo without name.svg';
 
 const Footer = () => {
+  const handleClick = () => {
+    return document.getElementById('about').scrollIntoView();
+  };
   return (
     <footer className='bg-tertiary py-12 lg:p-0'>
       <div className='container mx-auto'>
@@ -15,17 +18,32 @@ const Footer = () => {
             {social.map((item, index) => {
               const { href, icon } = item;
               return (
-                <a className='text-accent text-base' href={href} key={index}>
+                <a
+                  className='text-accent text-3xl hover:text-cyan-400'
+                  href={href}
+                  key={index}
+                  target='_blank'
+                >
                   {icon}
                 </a>
               );
             })}
           </div>
-          <div>
-            <img src={Logo} alt='' className='w-20 h-20' />
-          </div>
+          <img
+            src={Logo}
+            alt=''
+            className='w-20 h-20 p-2 cursor-pointer'
+            onClick={handleClick}
+          />
           <p className='text-paragraph opacity-80 text-[15px] text-center'>
-            &copy; 2022 Abdulmajeed Kutaibani.
+            &copy; 2022{' '}
+            <a
+              href='https://wa.me/905527264403'
+              target='_blank'
+              className='underline underline-offset-4 hover:text-cyan-400'
+            >
+              Abdulmajeed Kutaibani.
+            </a>
             <br /> All rights reserved.
           </p>
         </div>

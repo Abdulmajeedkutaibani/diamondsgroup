@@ -12,7 +12,11 @@ const Socials = () => {
             className='flex justify-center items-center text-accent'
             key={index}
           >
-            <a className='text-xl' href={item.href}>
+            <a
+              className='text-3xl hover:text-cyan-400'
+              href={item.href}
+              target='_blank'
+            >
               {item.icon}
             </a>
           </li>

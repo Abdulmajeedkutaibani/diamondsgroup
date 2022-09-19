@@ -77,21 +77,21 @@ export const navigation = [
 
 // social
 export const social = [
-  {
-    icon: <FiYoutube />,
-    href: '',
-  },
-  {
-    icon: <FiInstagram />,
-    href: '',
-  },
-  {
-    icon: <FiFacebook />,
-    href: '',
-  },
+  // {
+  //   icon: <FiYoutube />,
+  //   href: '',
+  // },
+  // {
+  //   icon: <FiInstagram />,
+  //   href: '',
+  // },
+  // {
+  //   icon: <FiFacebook />,
+  //   href: '',
+  // },
   {
     icon: <BsWhatsapp />,
-    href: '',
+    href: 'https://wa.me/905345144988',
   },
 ];
 

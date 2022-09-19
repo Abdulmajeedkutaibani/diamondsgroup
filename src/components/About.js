@@ -1,18 +1,24 @@
 import React from 'react';
 
 // import img
-import Image from '../assets/img/logo 2.svg';
+import Image from '../assets/img/logo with name.svg';
 
 const About = () => {
+  const handleClick = () => {
+    return document.getElementById('contact').scrollIntoView();
+  };
+
   return (
     <section className='section bg-secondary' id='about'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row lg:gap-24 items-center'>
-          <img
-            className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl'
-            src={Image}
-            alt=''
-          />
+          <div className='w-full flex justify-center'>
+            <img
+              className='object-cover w-96 h-96 md:mx-auto lg:mx-0 rounded-2xl'
+              src={Image}
+              alt=''
+            />
+          </div>
           <div className='flex flex-col items-center text-center lg:items-start lg:text-left'>
             <div className='flex flex-col'>
               <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase'>
@@ -23,16 +29,30 @@ const About = () => {
               </p> */}
               <hr className='mb-8 opacity-5' />
               <p className='mb-8'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
-                earum dolorum quo consequatur rem nihil hic ducimus rerum soluta
-                neque harum velit molestiae dignissimos distinctio dolorum nisi
-                labore culpa nihil. <br />
+                We are an international trading company dealing with all
+                commodities, this includes: food items, flour, olive oil, apple
+                vinegar, organic products and more. <br />
                 <br />
-                Qui doloremque quod sit accusantium unde totam inventore
-                cupiditate ratione esse maxime eum recusandae ducimus.
+                We also work with medical equipment, both trading and repairing
+                of equipment such ultra sound machines and laboratory equipment.
+                <br />
+                We work in oil and gas services representing an international
+                drilling company. We provide oil tools and all services related
+                to drilling processes.
+                <br />
+                <br />
+                We provide services related to gold, diamonds and valuable
+                stones mining and shipping, logistics, training and consulting.
+                <br />
+                <br />
+                Finally, we work in real estate investments and development.
+                <br />
               </p>
             </div>
-            <button className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'>
+            <button
+              className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'
+              onClick={handleClick}
+            >
               Contact Us
             </button>
           </div>
