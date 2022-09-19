@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import BackTopBtn from './components/BackTopBtn';
 
+console.log(process.env.REACT_APP_API_KEY);
+
 const App = () => {
   return (
     <div className='bg-white relative'>
