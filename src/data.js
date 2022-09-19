@@ -295,7 +295,7 @@ export const contact = [
   {
     icon: <FiMapPin />,
     title: 'Current Location',
-    subtitle: 'Istanbul, Turkey',
+    subtitle: 'Aksaray, İnkılap Cd. No:43, 34096 Fatih/İstanbul',
     description: 'Serving clients worldwide',
   },
 ];
