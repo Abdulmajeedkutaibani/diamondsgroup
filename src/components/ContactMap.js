@@ -12,7 +12,7 @@ export const ContactMap = () => {
 
 function Map() {
   const center = useMemo(
-    () => ({ lat: 41.00895907850787, lng: 28.97459600524904 }),
+    () => ({ lat: 41.008135631028225, lng: 28.951109307810082 }),
     []
   );
 
