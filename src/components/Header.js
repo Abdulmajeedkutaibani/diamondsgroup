@@ -5,6 +5,7 @@ import Logo from '../assets/img/logo.svg';
 import Nav from '../components/Nav';
 import NavMobile from '../components/NavMobile';
 import Socials from './Socials';
+import { BsCurrencyExchange } from 'react-icons/bs';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -14,6 +15,16 @@ const Header = () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
+  const handleWidgetButton = () => {
+    return (
+      document
+        .getElementById('currency-widget')
+        .classList.toggle('right-[-20rem]'),
+      document
+        .getElementById('currency-widget')
+        .classList.toggle('right-[2.75rem]')
+    );
+  };
 
   return (
     <header
@@ -39,6 +50,34 @@ const Header = () => {
           <NavMobile />
         </div>
       </div>
+      <div
+        id='currency-widget'
+        className='absolute w-[200px] right-[-20rem] top-[6rem] text-xl border border-cyan-500 border-2 rounded-lg tranform: transition-all duration-300'
+      >
+        <fxwidget-er
+          inverse='false'
+          amount='1'
+          decimals='2'
+          large='true'
+          shadow='true'
+          symbol='true'
+          flag='true'
+          changes='true'
+          grouping='true'
+          border='true'
+          main-curr='USD'
+          sel-curr='EUR,GBP,TRY,AED,KWD,SAR'
+          background-color='#16a34a'
+          border-radius='0.5'
+          background='linear-gradient(161deg,#141E30,#243B55)'
+        ></fxwidget-er>
+      </div>
+      <button
+        onClick={handleWidgetButton}
+        className='absolute w-12 h-12 right-[7.5rem] top-[1.1rem] rounded-full flex justify-center items-center bg-[#141E30] text-gray-200 text-3xl'
+      >
+        <BsCurrencyExchange />
+      </button>
     </header>
   );
 };

@@ -7,6 +7,7 @@ const Hero = () => {
   const handleClick = () => {
     return document.getElementById('contact').scrollIntoView();
   };
+
   return (
     <section
       id='home'

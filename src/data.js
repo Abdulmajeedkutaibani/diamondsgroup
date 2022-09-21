@@ -23,14 +23,17 @@ import Food from './assets/img/brands/12.svg';
 
 // projects images
 import Oil from './assets/img/projects/oil.jpeg';
-import EdibleOil from './assets/img/projects/edible oil.jpeg';
-import Sugar from './assets/img/projects/WHITE-SUGAR.jpeg';
 import Flour from './assets/img/projects/flour.jpeg';
-import Meat from './assets/img/projects/Meat.jpeg';
-import PaperRolls from './assets/img/projects/paper rolls.jpeg';
-import Buckwheat from './assets/img/projects/buckwheat.jpeg';
-import WindowGlass from './assets/img/projects/window glass.webp';
-import Asphalt from './assets/img/projects/asphalt.jpeg';
+
+import GasImage from './assets/img/projects/gas.png';
+import RealEstateImage from './assets/img/projects/real estate (1).png';
+import AppleVinegarImage from './assets/img/projects/apple vinegar.png';
+import LaboratoryEquipment from './assets/img/projects/lab eqipments.png';
+import Drilling from './assets/img/projects/drilling processes.png';
+import JewelleryImage from './assets/img/projects/jewellery.png';
+import OrganicFood from './assets/img/projects/organic food (1).png';
+import UltraSound from './assets/img/projects/ultrasound.png';
+import OilTools from './assets/img/projects/oil tools.png';
 
 // skills images
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -139,14 +142,14 @@ export const projectsData = [
   },
   {
     id: '2',
-    image: EdibleOil,
-    name: 'Edible Oil',
+    image: AppleVinegarImage,
+    name: 'Apple Vinegar',
     category: 'Food',
   },
   {
     id: '3',
-    image: Sugar,
-    name: 'Sugar',
+    image: OrganicFood,
+    name: 'Organic Products',
     category: 'Food',
   },
   {
@@ -157,33 +160,45 @@ export const projectsData = [
   },
   {
     id: '5',
-    image: Meat,
-    name: 'Meat',
-    category: 'Food',
+    image: LaboratoryEquipment,
+    name: 'Laboratory Equipment',
+    category: 'Medical',
   },
   {
     id: '6',
-    image: PaperRolls,
-    name: 'Paper Rolls',
-    category: 'Others',
+    image: UltraSound,
+    name: 'Ultra Sound Machines',
+    category: 'Medical',
   },
   {
     id: '7',
-    image: Buckwheat,
-    name: 'Buckwheat',
-    category: 'Food',
+    image: GasImage,
+    name: 'Gas',
+    category: 'Energy',
   },
   {
     id: '8',
-    image: WindowGlass,
-    name: 'Window Glass',
-    category: 'Others',
+    image: OilTools,
+    name: 'Oil Tools',
+    category: 'Energy',
   },
   {
     id: '9',
-    image: Asphalt,
-    name: 'Asphalt',
-    category: 'Others',
+    image: Drilling,
+    name: 'Drilling Processes Services',
+    category: 'Energy',
+  },
+  {
+    id: '10',
+    image: JewelleryImage,
+    name: 'Gold, Diamonds and Valuable Stones Mining and Shipping',
+    category: 'Jewellery',
+  },
+  {
+    id: '11',
+    image: RealEstateImage,
+    name: 'Real Estate Investments and Development',
+    category: 'Real Estate',
   },
 ];
 
@@ -199,7 +214,13 @@ export const projectsNav = [
     name: 'Food',
   },
   {
-    name: 'Others',
+    name: 'Medical',
+  },
+  {
+    name: 'Jewellery',
+  },
+  {
+    name: 'Real Estate',
   },
 ];
 
