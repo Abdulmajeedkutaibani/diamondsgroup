@@ -78,6 +78,7 @@ const NavMobile = () => {
           return (
             <li key={idx} className='mb-8'>
               <Link
+                onClick={() => setIsOpen(false)}
                 to={item.href}
                 smooth={true}
                 duration={500}

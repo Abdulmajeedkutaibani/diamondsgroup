@@ -52,7 +52,7 @@ const Header = () => {
       </div>
       <div
         id='currency-widget'
-        className='absolute w-[200px] right-[-20rem] top-[6rem] text-xl border border-cyan-500 border-2 rounded-lg tranform: transition-all duration-300'
+        className='absolute w-[200px] right-[-20rem] top-[6rem] text-xl border border-green-500 border-2 rounded-lg tranform: transition-all duration-300'
       >
         <fxwidget-er
           inverse='false'
@@ -74,7 +74,7 @@ const Header = () => {
       </div>
       <button
         onClick={handleWidgetButton}
-        className='absolute w-12 h-12 right-[7.5rem] top-[1.1rem] rounded-xl flex justify-center items-center bg-[#141E30] text-gray-200 text-3xl hover:bg-cyan-500'
+        className='absolute w-10 h-10 lg:right-[1.5rem] right-[10rem] top-[25px] rounded-xl flex justify-center items-center  text-gray-200 text-4xl hover:text-green-500'
       >
         <BsCurrencyExchange />
       </button>

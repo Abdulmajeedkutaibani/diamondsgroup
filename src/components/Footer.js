@@ -32,7 +32,7 @@ const Footer = () => {
           <img
             src={Logo}
             alt=''
-            className='w-20 h-20 p-2 cursor-pointer'
+            className='w-20 h-20 p-2 lg:ml-40 cursor-pointer'
             onClick={handleClick}
           />
           <p className='text-paragraph opacity-80 text-[15px] text-center'>

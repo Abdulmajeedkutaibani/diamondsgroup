@@ -15,7 +15,6 @@
     @apply text-white font-primary;
   }
   html {
-    scroll-behavior: smooth;
   }
   .section {
     @apply py-12 lg:py-32;

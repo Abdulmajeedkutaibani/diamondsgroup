@@ -11,10 +11,10 @@ const Portfolio = () => {
           <h2 className='section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[3rem] before:-left-32 before:hidden before:lg:block'>
             Our Products Include
           </h2>
-          <p className='subtitle'>
+          {/* <p className='subtitle'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
             labore nisium illum cupiditate reiciendis a numquam
-          </p>
+          </p> */}
         </div>
         <Projects />
       </div>

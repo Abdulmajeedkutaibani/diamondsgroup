@@ -22,23 +22,32 @@ const TestiSlider = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination]}
         className='mySwiper'
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition } = item;
+          const {
+            authorImg,
+            authorText,
+            authorName,
+            authorPosition,
+            authorPhone,
+          } = item;
           return (
             <SwiperSlide key={index}>
-              <div className='flex flex-col lg:flex-row gap-12 lg:gap-32'>
+              <div className='flex flex-col lg:items-start items-center lg:flex-row gap-12 lg:gap-32'>
                 <div className='w-48 h-48 lg:w-[328px] lg:h-[328px]'>
                   <img className='rounded-2xl  w-full' src={authorImg} alt='' />
                 </div>
                 <div className='flex flex-col max-w-3xl'>
                   <h5 className='font-body text-2xl mb-8 italic font-normal'>
                     {authorText}
+                  </h5>
+                  <h5 className='font-body text-2xl mb-8 italic font-normal'>
+                    {authorPhone}
                   </h5>
                   <div>
                     <p className='text-lg text-accent'>{authorName}</p>

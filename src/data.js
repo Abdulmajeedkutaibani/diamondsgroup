@@ -46,9 +46,7 @@ import SkillImg7 from './assets/img/skills/git.png';
 import SkillImg8 from './assets/img/skills/figma.png';
 
 // testimonial images
-import TestiImage1 from './assets/img/testimonials/founder 1.webp';
-import TestiImage2 from './assets/img/testimonials/founder 2.jpeg';
-import TestiImage3 from './assets/img/testimonials/founder 3.jpeg';
+import AvatarImage from './assets/img/avatar.png';
 
 // navigation
 export const navigation = [
@@ -64,10 +62,10 @@ export const navigation = [
     name: 'Products',
     href: 'portfolio',
   },
-  {
-    name: 'services',
-    href: 'services',
-  },
+  // {
+  //   name: 'services',
+  //   href: 'services',
+  // },
   {
     name: 'testimonials',
     href: 'testimonials',
@@ -283,26 +281,26 @@ export const services = [
 // testimonials
 export const testimonials = [
   {
-    authorImg: TestiImage1,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'John Doe',
-    authorPosition: 'Founder, Diamonds Group',
+    authorImg: AvatarImage,
+    authorText: 'naserjerrari@diamondsgroupsite.com',
+    authorPhone: '+90 534 514 49 88',
+    authorName: 'Naser Jerrari',
+    authorPosition: 'Chairman, Business Development Manager',
   },
   {
-    authorImg: TestiImage2,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'John Doe',
-    authorPosition: 'Founder, Diamonds Group',
+    authorImg: AvatarImage,
+    authorText: 'hasan@diamondsgroupsite.com',
+    authorPhone: '+90 534 977 79 84',
+    authorName: 'Hasan Katipoglu',
+    authorPosition: 'CEO',
   },
-  {
-    authorImg: TestiImage3,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'John Doe',
-    authorPosition: 'Founder, Diamonds Group',
-  },
+  // {
+  //   authorImg: AvatarImage,
+  //   authorText:
+  //     'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
+  //   authorName: 'John Doe',
+  //   authorPosition: 'Founder, Diamonds Group',
+  // },
 ];
 
 // contact
