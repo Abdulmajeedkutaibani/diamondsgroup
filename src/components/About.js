@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <section className='section bg-secondary' id='about'>
+    <section className='section bg-secondary overflow-hidden' id='about'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row lg:gap-24 items-center'>
           <div className='w-full flex justify-center'>
@@ -43,7 +43,7 @@ const About = () => {
             className='flex flex-col items-center text-center lg:items-start lg:text-left'
           >
             <div className='flex flex-col'>
-              <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase'>
+              <h2 className='hidden lg:block text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase'>
                 Diamonds group
               </h2>
               {/* <p className='mb-4 text-accent'>

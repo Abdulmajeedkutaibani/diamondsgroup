@@ -2,7 +2,10 @@ import React from 'react';
 
 const Project = ({ item }) => {
   return (
-    <div key={item.id} className='flex flex-col items-center text-center'>
+    <div
+      key={item.id}
+      className='flex flex-col items-center text-center hover:scale-110'
+    >
       <div className='mb-8 '>
         <img className='rounded-lg w-96 h-56' src={item.image} alt='' />
       </div>

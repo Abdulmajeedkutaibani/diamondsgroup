@@ -44,7 +44,7 @@ const NavMobile = () => {
   };
 
   return (
-    <nav className='relative'>
+    <nav className='relative z-40'>
       <div
         onClick={() => setIsOpen(true)}
         className='cursor-pointer text-white'

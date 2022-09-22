@@ -30,10 +30,10 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div className=' overflow-hidden'>
       {/* projects nav */}
-      <nav className='mb-12 max-w-xl mx-auto'>
-        <ul className='flex flex-col md:flex-row justify-evenly items-center text-white'>
+      <nav className='mb-12 max-w-xl mx-auto '>
+        <ul className='flex flex-wrap md:flex-nowrap gap-8 justify-evenly items-center text-white'>
           {projectsNav.map((item, index) => {
             return (
               <li
@@ -42,7 +42,7 @@ const Projects = () => {
                 }}
                 className={`${
                   active === index ? 'active' : ''
-                } cursor-pointer capitalize m-4`}
+                } cursor-pointer capitalize m-4 hover:text-green-500 border p-2 border-green-500 whitespace-nowrap`}
                 key={index}
               >
                 {item.name}
