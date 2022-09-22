@@ -36,7 +36,7 @@ const About = () => {
             />
           </div>
           <motion.div
-            initial={{ x: 400, opacity: 0 }}
+            initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
