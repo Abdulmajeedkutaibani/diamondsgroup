@@ -74,7 +74,7 @@ const Header = () => {
       </div>
       <button
         onClick={handleWidgetButton}
-        className='absolute w-10 h-10 lg:right-[1.5rem] right-[10rem] top-[25px] rounded-xl flex justify-center items-center  text-gray-200 text-4xl hover:text-green-500'
+        className='absolute w-10 h-10 lg:right-[1.5rem] right-[7rem] top-[25px] rounded-xl flex justify-center items-center  text-gray-200 text-4xl hover:text-green-500'
       >
         <BsCurrencyExchange />
       </button>
