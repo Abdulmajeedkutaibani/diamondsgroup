@@ -14,7 +14,8 @@ import {
 import { BsWhatsapp } from 'react-icons/bs';
 
 // companies icons
-import Meidice from './assets/img/brands/7.svg';
+import pharmaceuticals from './assets/img/brands/7.svg';
+import MedicalEquipments from './assets/img/brands/medical equipments.svg';
 import Investment from './assets/img/brands/8.svg';
 import Computer from './assets/img/brands/9.svg';
 import RealEstate from './assets/img/brands/10.svg';
@@ -46,7 +47,8 @@ import SkillImg7 from './assets/img/skills/git.png';
 import SkillImg8 from './assets/img/skills/figma.png';
 
 // testimonial images
-import AvatarImage from './assets/img/avatar.png';
+import NaserJerrariPhoto from './assets/img/testimonials/naser jerrari photo.png';
+import HasanPhoto from './assets/img/testimonials/hasan katipoglu photo.png';
 
 // navigation
 export const navigation = [
@@ -67,7 +69,7 @@ export const navigation = [
   //   href: 'services',
   // },
   {
-    name: 'testimonials',
+    name: 'Founders',
     href: 'testimonials',
   },
   {
@@ -99,8 +101,13 @@ export const social = [
 // companies
 export const brands = [
   {
-    img: Meidice,
-    service: 'Medicine',
+    img: pharmaceuticals,
+    service: 'Pharmaceuticals',
+    href: '',
+  },
+  {
+    img: MedicalEquipments,
+    service: 'Medical Equipments',
     href: '',
   },
   {
@@ -281,14 +288,14 @@ export const services = [
 // testimonials
 export const testimonials = [
   {
-    authorImg: AvatarImage,
+    authorImg: NaserJerrariPhoto,
     authorText: 'naserjerrari@diamondsgroupsite.com',
     authorPhone: '+90 534 514 49 88',
     authorName: 'Naser Jerrari',
     authorPosition: 'Chairman, Business Development Manager',
   },
   {
-    authorImg: AvatarImage,
+    authorImg: HasanPhoto,
     authorText: 'hasan@diamondsgroupsite.com',
     authorPhone: '+90 534 977 79 84',
     authorName: 'Hasan Katipoglu',
