@@ -15,8 +15,11 @@ import { motion } from 'framer-motion';
 
 // import Link
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const NavMobile = () => {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const circleVariants = {
@@ -85,7 +88,7 @@ const NavMobile = () => {
                 offset={-70}
                 className='text-xl cursor-pointer capitalize'
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           );

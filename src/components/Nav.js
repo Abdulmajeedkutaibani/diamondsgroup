@@ -5,8 +5,10 @@ import { navigation } from '../data';
 
 // import Link
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
+  const { t } = useTranslation();
   return (
     <nav>
       <ul className='flex space-x-8 capitalize text-[15px]'>
@@ -25,7 +27,7 @@ const Nav = () => {
                 offset={-70}
                 className='transition-all duration-300'
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             </li>
           );

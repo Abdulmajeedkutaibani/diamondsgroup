@@ -61,7 +61,7 @@ export const navigation = [
     href: 'about',
   },
   {
-    name: 'Products',
+    name: 'products',
     href: 'portfolio',
   },
   // {
@@ -69,7 +69,7 @@ export const navigation = [
   //   href: 'services',
   // },
   {
-    name: 'Founders',
+    name: 'founders',
     href: 'testimonials',
   },
   {
@@ -107,7 +107,7 @@ export const brands = [
   },
   {
     img: MedicalEquipments,
-    service: 'Medical Equipments',
+    service: 'Medical_Equipments',
     href: '',
   },
   {
@@ -122,12 +122,12 @@ export const brands = [
   },
   {
     img: RealEstate,
-    service: 'Real Estate',
+    service: 'Real_Estate',
     href: '',
   },
   {
     img: ImportAndExport,
-    service: 'Import/Export',
+    service: 'Import_Export',
     href: '',
   },
   {
@@ -148,13 +148,13 @@ export const projectsData = [
   {
     id: '2',
     image: AppleVinegarImage,
-    name: 'Apple Vinegar',
+    name: 'Apple_Vinegar',
     category: 'Food',
   },
   {
     id: '3',
     image: OrganicFood,
-    name: 'Organic Products',
+    name: 'Organic_Products',
     category: 'Food',
   },
   {
@@ -166,13 +166,13 @@ export const projectsData = [
   {
     id: '5',
     image: LaboratoryEquipment,
-    name: 'Laboratory Equipment',
+    name: 'Laboratory_Equipment',
     category: 'Medical',
   },
   {
     id: '6',
     image: UltraSound,
-    name: 'Ultra Sound Machines',
+    name: 'Ultra_Sound_Machines',
     category: 'Medical',
   },
   {
@@ -184,25 +184,25 @@ export const projectsData = [
   {
     id: '8',
     image: OilTools,
-    name: 'Oil Tools',
+    name: 'Oil_Tools',
     category: 'Energy',
   },
   {
     id: '9',
     image: Drilling,
-    name: 'Drilling Processes Services',
+    name: 'Drilling_Processes_Services',
     category: 'Energy',
   },
   {
     id: '10',
     image: JewelleryImage,
-    name: 'Gold, Diamonds and Valuable Stones Mining and Shipping',
+    name: 'Gold,_Diamonds_and_Valuable_Stones_Mining_and_Shipping',
     category: 'Jewellery',
   },
   {
     id: '11',
     image: RealEstateImage,
-    name: 'Real Estate Investments and Development',
+    name: 'Real_Estate_Investments_and_Development',
     category: 'Real Estate',
   },
 ];
@@ -210,7 +210,7 @@ export const projectsData = [
 // projects
 export const projectsNav = [
   {
-    name: 'all',
+    name: 'All',
   },
   {
     name: 'Energy',
@@ -291,14 +291,14 @@ export const testimonials = [
     authorImg: NaserJerrariPhoto,
     authorText: 'naserjerrari@diamondsgroupsite.com',
     authorPhone: '+90 534 514 49 88',
-    authorName: 'Naser Jerrari',
-    authorPosition: 'Chairman, Business Development Manager',
+    authorName: 'Naser_Jerrari',
+    authorPosition: 'Chairman,_Business_Development_Manager',
   },
   {
     authorImg: HasanPhoto,
     authorText: 'hasan@diamondsgroupsite.com',
     authorPhone: '+90 534 977 79 84',
-    authorName: 'Hasan Katipoglu',
+    authorName: 'Hasan_Katipoglu',
     authorPosition: 'CEO',
   },
   // {
@@ -314,14 +314,14 @@ export const testimonials = [
 export const contact = [
   {
     icon: <FiMail />,
-    title: 'Have a question?',
-    subtitle: `We're here to help you.`,
-    description: 'Email us at info@diamondsgroupsite.com',
+    title: 'Have_a_question?',
+    subtitle: `We're_here_to_help_you.`,
+    description: 'Email_us_at_info@diamondsgroupsite.com',
   },
   {
     icon: <FiMapPin />,
-    title: 'Current Location',
+    title: 'Current_Location',
     subtitle: 'Aksaray, İnkılap Cd. No:43, 34096 Fatih/İstanbul',
-    description: 'Serving clients worldwide',
+    description: 'Serving_clients_worldwide',
   },
 ];

@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // import brands data
 import { brands } from '../data';
 
 const Brands = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='min-h-[146px] bg-tertiary flex items-center py-2'>
       <div className='container mx-auto flex md:justify-between items-center flex-wrap justify-evenly gap-2'>
@@ -15,7 +18,7 @@ const Brands = () => {
             >
               <img src={brand.img} alt='' />
               <p className='text-base font-medium text-white p-2 mb-2 rounded text-transform: uppercase'>
-                {brand.service}
+                {t(brand.service)}
               </p>
             </div>
           );

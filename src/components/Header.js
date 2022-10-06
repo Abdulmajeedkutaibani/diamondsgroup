@@ -6,6 +6,7 @@ import Nav from '../components/Nav';
 import NavMobile from '../components/NavMobile';
 import Socials from './Socials';
 import { BsCurrencyExchange } from 'react-icons/bs';
+import DropdownMenuForLanguages from './DropdownMenu';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -45,39 +46,44 @@ const Header = () => {
         <div className='hidden lg:block'>
           <Socials />
         </div>
+        <div>
+          <DropdownMenuForLanguages />
+        </div>
+        <div>
+          <div
+            id='currency-widget'
+            className='absolute w-[200px] right-[-20rem] top-[6rem] text-xl border border-green-500 border-2 rounded-lg tranform: transition-all duration-300'
+          >
+            <fxwidget-er
+              inverse='false'
+              amount='1'
+              decimals='2'
+              large='true'
+              shadow='true'
+              symbol='true'
+              flag='true'
+              changes='true'
+              grouping='true'
+              border='true'
+              main-curr='USD'
+              sel-curr='EUR,GBP,TRY,AED,KWD,SAR'
+              background-color='#16a34a'
+              border-radius='0.5'
+              background='linear-gradient(161deg,#141E30,#243B55)'
+            ></fxwidget-er>
+          </div>
+          <button
+            onClick={handleWidgetButton}
+            className=' w-10 h-10  rounded-xl flex justify-center items-center  text-gray-200 text-4xl hover:text-green-500'
+          >
+            <BsCurrencyExchange />
+          </button>
+        </div>
         {/* nav mobile*/}
         <div className='lg:hidden'>
           <NavMobile />
         </div>
       </div>
-      <div
-        id='currency-widget'
-        className='absolute w-[200px] right-[-20rem] top-[6rem] text-xl border border-green-500 border-2 rounded-lg tranform: transition-all duration-300'
-      >
-        <fxwidget-er
-          inverse='false'
-          amount='1'
-          decimals='2'
-          large='true'
-          shadow='true'
-          symbol='true'
-          flag='true'
-          changes='true'
-          grouping='true'
-          border='true'
-          main-curr='USD'
-          sel-curr='EUR,GBP,TRY,AED,KWD,SAR'
-          background-color='#16a34a'
-          border-radius='0.5'
-          background='linear-gradient(161deg,#141E30,#243B55)'
-        ></fxwidget-er>
-      </div>
-      <button
-        onClick={handleWidgetButton}
-        className='absolute w-10 h-10 lg:right-[1.5rem] right-[7rem] top-[25px] rounded-xl flex justify-center items-center  text-gray-200 text-4xl hover:text-green-500'
-      >
-        <BsCurrencyExchange />
-      </button>
     </header>
   );
 };

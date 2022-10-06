@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // testimonials data
 import { testimonials } from '../data';
@@ -15,6 +16,8 @@ import '../swiper.css';
 import { Autoplay, Pagination } from 'swiper';
 
 const TestiSlider = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Swiper
@@ -44,8 +47,8 @@ const TestiSlider = () => {
                 </div>
                 <div className='flex flex-col max-w-3xl'>
                   <div className='mb-12'>
-                    <p className='text-2xl text-accent '>{authorName}</p>
-                    <p className=' text-base '>{authorPosition}</p>
+                    <p className='text-2xl text-accent '>{t(authorName)}</p>
+                    <p className=' text-base font-bold '>{t(authorPosition)}</p>
                   </div>
                   <h5 className='font-body md:text-xl mb-8 italic font-normal'>
                     {authorText}

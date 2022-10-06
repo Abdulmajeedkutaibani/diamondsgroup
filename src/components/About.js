@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 // import img
 import Image from '../assets/img/logo with name.svg';
 
 const About = () => {
+  const { t } = useTranslation();
+
   const handleClick = () => {
     return document.getElementById('contact').scrollIntoView();
   };
@@ -51,23 +54,17 @@ const About = () => {
               </p> */}
               <hr className='mb-8 opacity-5' />
               <p className='mb-8'>
-                We are an international trading company dealing with all
-                commodities, this includes: food items, flour, olive oil, apple
-                vinegar, organic products and more. <br />
+                {t('aboutUs1')} <br />
                 <br />
-                We also work with medical equipment, both trading and repairing
-                of equipment such ultra sound machines and laboratory equipment.
+                {t('aboutUs2')}
                 <br />
-                We work in oil and gas services representing an international
-                drilling company. We provide oil tools and all services related
-                to drilling processes.
+                {t('aboutUs3')}
                 <br />
                 <br />
-                We provide services related to gold, diamonds and valuable
-                stones mining and shipping, logistics, training and consulting.
+                {t('aboutUs4')}
                 <br />
                 <br />
-                Finally, we work in real estate investments and development.
+                {t('aboutUs5')}
                 <br />
               </p>
             </div>
@@ -75,7 +72,7 @@ const About = () => {
               className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'
               onClick={handleClick}
             >
-              Contact Us
+              {t('contact_us')}
             </button>
           </motion.div>
         </div>

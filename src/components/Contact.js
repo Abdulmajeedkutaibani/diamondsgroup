@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useTranslation } from 'react-i18next';
 
 // import contact data
 import { contact } from '../data';
@@ -14,6 +15,8 @@ let schema = yup.object().shape({
   message: yup.string().required().min(1),
 });
 const Contact = () => {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
@@ -53,7 +56,7 @@ const Contact = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center text-center'>
           <h2 className='section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block mb-20'>
-            Contact Us
+            {t('contact_us')}
           </h2>
           {/* <p className='subtitle'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
@@ -76,9 +79,9 @@ const Contact = () => {
                     {icon}
                   </div>
                   <div>
-                    <h4 className='font-body text-xl mb-1'>{title}</h4>
-                    <p className='mb-1 text-paragraph'>{subtitle}</p>
-                    <p className='text-accent font-normal '>{description}</p>
+                    <h4 className='font-body text-xl mb-1'>{t(title)}</h4>
+                    <p className='mb-1 text-paragraph'>{t(subtitle)}</p>
+                    <p className='text-accent font-normal '>{t(description)}</p>
                   </div>
                 </div>
               );
@@ -93,7 +96,7 @@ const Contact = () => {
               <input
                 className='input'
                 type='text'
-                placeholder='Your name'
+                placeholder={t('namePlaceholder')}
                 name='from_name'
                 {...register('from_name')}
                 required
@@ -102,7 +105,7 @@ const Contact = () => {
               <input
                 className='input'
                 type='email'
-                placeholder='Your email'
+                placeholder={t('emailPlaceholder')}
                 name='email'
                 {...register('email')}
                 required
@@ -112,7 +115,7 @@ const Contact = () => {
 
             <textarea
               className='textarea'
-              placeholder='Your message'
+              placeholder={t('messagePlaceholder')}
               name='message'
               {...register('message')}
             ></textarea>
@@ -121,7 +124,7 @@ const Contact = () => {
               value='send'
               className='btn btn-lg bg-accent hover:bg-secondary-hover mx-auto lg:mx-0'
             >
-              Send message
+              {t('send_message')}
             </button>
           </form>
         </div>
