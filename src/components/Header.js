@@ -33,13 +33,15 @@ const Header = () => {
         bg ? 'bg-tertiary h-20' : 'h-24'
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
-      <div className='container mx-auto h-full flex items-center justify-between'>
+      <div
+        className={`container mx-auto h-full flex items-center justify-between`}
+      >
         {/* logo */}
         <a href='#' className=' w-44 h-44'>
           <img src={Logo} alt='' />
         </a>
         {/* nav */}
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block '>
           <Nav />
         </div>
         {/* Socials */}

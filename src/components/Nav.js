@@ -6,12 +6,19 @@ import { navigation } from '../data';
 // import Link
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import cookies from 'js-cookie';
 
 const Nav = () => {
   const { t } = useTranslation();
+  const currentLanguageCode = cookies.get('i18next') || 'en';
+
   return (
     <nav>
-      <ul className='flex space-x-8 capitalize text-[15px]'>
+      <ul
+        className={`flex gap-8 capitalize text-[15px] ${
+          currentLanguageCode === 'ar' ? ' flex-row-reverse' : 'text-left'
+        }`}
+      >
         {navigation.map((item, idx) => {
           return (
             <li

@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import cookies from 'js-cookie';
 
 // import img
 import Image from '../assets/img/logo with name.svg';
 
 const About = () => {
   const { t } = useTranslation();
+  const currentLanguageCode = cookies.get('i18next') || 'en';
 
   const handleClick = () => {
     return document.getElementById('contact').scrollIntoView();
@@ -46,14 +48,22 @@ const About = () => {
             className='flex flex-col items-center text-center lg:items-start lg:text-left'
           >
             <div className='flex flex-col'>
-              <h2 className='hidden lg:block text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase'>
+              <h2
+                className={`hidden lg:block text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase ${
+                  currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                }`}
+              >
                 Diamonds group
               </h2>
               {/* <p className='mb-4 text-accent'>
                 Freelance Frontend Web Developer
               </p> */}
               <hr className='mb-8 opacity-5' />
-              <p className='mb-8'>
+              <p
+                className={`mb-8 ${
+                  currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                }`}
+              >
                 {t('aboutUs1')} <br />
                 <br />
                 {t('aboutUs2')}
@@ -69,7 +79,9 @@ const About = () => {
               </p>
             </div>
             <button
-              className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'
+              className={`btn btn-md bg-accent hover:bg-secondary-hover transition-all ${
+                currentLanguageCode === 'ar' ? 'ml-auto' : ''
+              }`}
               onClick={handleClick}
             >
               {t('contact_us')}

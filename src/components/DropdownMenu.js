@@ -56,7 +56,7 @@ export default function DropdownMenu() {
                     )}
                   >
                     <span
-                      className={`flag-icon flag-icon-${country_code}`}
+                      className={`flag-icon flag-icon-${country_code} `}
                     ></span>
                     {name}
                   </button>
