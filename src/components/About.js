@@ -50,7 +50,9 @@ const About = () => {
             <div className='flex flex-col'>
               <h2
                 className={`hidden lg:block text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block text-transform: uppercase ${
-                  currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                  currentLanguageCode === 'ar'
+                    ? 'md:text-right'
+                    : 'md:text-left'
                 }`}
               >
                 Diamonds group
@@ -61,7 +63,9 @@ const About = () => {
               <hr className='mb-8 opacity-5' />
               <p
                 className={`mb-8 ${
-                  currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                  currentLanguageCode === 'ar'
+                    ? 'md:text-right'
+                    : 'md:text-left'
                 }`}
               >
                 {t('aboutUs1')} <br />
@@ -80,7 +84,7 @@ const About = () => {
             </div>
             <button
               className={`btn btn-md bg-accent hover:bg-secondary-hover transition-all ${
-                currentLanguageCode === 'ar' ? 'ml-auto' : ''
+                currentLanguageCode === 'ar' ? 'lg:ml-auto' : ''
               }`}
               onClick={handleClick}
             >

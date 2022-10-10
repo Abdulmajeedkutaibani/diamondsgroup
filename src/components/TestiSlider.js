@@ -51,7 +51,9 @@ const TestiSlider = () => {
                 </div>
                 <div
                   className={`flex flex-col max-w-3xl ${
-                    currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                    currentLanguageCode === 'ar'
+                      ? 'md:text-right'
+                      : 'md:text-left'
                   }`}
                 >
                   <div className='mb-12'>

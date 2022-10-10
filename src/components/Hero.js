@@ -24,7 +24,7 @@ const Hero = () => {
           <div className='flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-16'>
             <h1
               className={`text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] ${
-                currentLanguageCode === 'ar' ? 'text-right' : 'text-left'
+                currentLanguageCode === 'ar' ? 'md:text-right' : 'md:text-left'
               }`}
             >
               {t('hero1')}
@@ -38,7 +38,7 @@ const Hero = () => {
             <button
               onClick={handleClick}
               className={`btn btn-md bg-accent hover:bg-secondary-hover md:btn-lg transition-all ${
-                currentLanguageCode === 'ar' ? 'ml-auto' : ''
+                currentLanguageCode === 'ar' ? 'md:ml-auto' : ''
               }`}
             >
               {t('work_with_us')}
