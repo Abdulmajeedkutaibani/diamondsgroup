@@ -290,7 +290,7 @@ export const testimonials = [
   {
     authorImg: NaserJerrariPhoto,
     authorText: 'naserjerrari@diamondsgroupsite.com',
-    authorPhone: '+90 534 514 49 88',
+    authorPhone: '+90 541 190 82 86',
     authorName: 'Naser_Jerrari',
     authorPosition: 'Chairman,_Business_Development_Manager',
   },
