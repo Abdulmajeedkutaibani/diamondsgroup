@@ -321,7 +321,7 @@ export const contact = [
   {
     icon: <FiMapPin />,
     title: 'Current_Location',
-    subtitle: 'Aksaray, İnkılap Cd. No:43, 34096 Fatih/İstanbul',
+    subtitle: 'iSTANBUL - FATIH-Molla Gürani Mah. Millet cad. Karagül is Merkz NO:84 D: 118(ESKI NO:149)',
     description: 'Serving_clients_worldwide',
   },
 ];
