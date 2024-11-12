@@ -288,26 +288,13 @@ export const services = [
 // testimonials
 export const testimonials = [
   {
-    authorImg: NaserJerrariPhoto,
-    authorText: 'naserjerrari@diamondsgroupsite.com',
-    authorPhone: '+90 541 190 82 86',
-    authorName: 'Naser_Jerrari',
-    authorPosition: 'Chairman,_Business_Development_Manager',
-  },
-  {
     authorImg: HasanPhoto,
     authorText: 'hasan@diamondsgroupsite.com',
     authorPhone: '+90 534 977 79 84',
     authorName: 'Hasan_Katipoglu',
     authorPosition: 'CEO',
   },
-  // {
-  //   authorImg: AvatarImage,
-  //   authorText:
-  //     'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-  //   authorName: 'John Doe',
-  //   authorPosition: 'Founder, Diamonds Group',
-  // },
+ 
 ];
 
 // contact
